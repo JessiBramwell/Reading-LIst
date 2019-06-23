@@ -1,17 +1,17 @@
 import React, { Component } from "react";
-import { Row, Col } from "../Grid"
+import { Col } from "../Grid";
+// import { List, ListItem } from "../List";
 
 
-class Results extends Component {
+function Results(props) {
+  
+  return (
+    <Col size={"md-6"}>
+      <h1>These are Results</h1>
+      {props.children}
+    </Col>
+  )
 
-
-  render() {
-    return (
-      <Col size={"md-6"}>
-        <h1>These are Results</h1>
-      </Col>
-    )
-  }
 }
 
 export default Results;
