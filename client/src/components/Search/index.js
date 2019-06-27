@@ -3,14 +3,16 @@ import { Input, Btn } from "../Form";
 
 function Search(props) {
 
-  console.log(props);
-
   return (
     <div>
       <Input
-        
+        name="search"
+        placeholder={"Search Bar"}
+        onChange={props.handleInputChange}
+        value={props.textValue}
       />
-      <Btn onClick={props.handleSubmit}>Submit</Btn>
+
+      <Btn onClick={props.handleSubmit}>Button</Btn>
     </div>
   )
 }

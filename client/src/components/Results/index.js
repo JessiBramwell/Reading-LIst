@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import { Col } from "../Grid";
-// import { List, ListItem } from "../List";
-
 
 function Results(props) {
   
+  console.log(props);
+  
   return (
     <Col size={"md-6"}>
-      <h1>These are Results</h1>
+      <h1>These are search results</h1>
       {props.children}
     </Col>
   )
