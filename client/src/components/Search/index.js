@@ -4,7 +4,7 @@ import { Input, Btn } from "../Form";
 function Search(props) {
 
   return (
-    <div>
+    <form>
       <Input
         name="search"
         placeholder={"Search Bar"}
@@ -13,7 +13,7 @@ function Search(props) {
       />
 
       <Btn onClick={props.handleSubmit}>Button</Btn>
-    </div>
+    </form>
   )
 }
 

@@ -18,7 +18,7 @@ export function TextArea(props) {
 
 export function Btn(props) {
   return (
-    <button {...props} className="btn btn-success" >
+    <button {...props} className="btn btn-success" type="submit" >
       {props.children}
     </button>
   )
