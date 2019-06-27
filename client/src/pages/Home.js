@@ -43,19 +43,19 @@ class Home extends Component {
     this.searchBooks(this.state.search);
   };
 
-  handleNewBook = (book) => {
+  handleNewBook = book => {
     API.saveBook(book)
       .then(this.loadBooks())
       .catch(err => console.log(err))
   };
 
-  handleDelete = (id) => {
+  handleDelete = id => {
     API.deleteBook(id)
       .then(this.loadBooks())
       .catch(err => console.log(err))
   };
 
-  handleAuthor = (arr) => {
+  handleAuthor = arr => {
     switch (true) {
 
       case (arr && arr.length > 1):
@@ -72,12 +72,12 @@ class Home extends Component {
     }
   };
 
-  handleNullImg = (img) => {
-    if(img) {
+  handleNullImg = img => {
+    if (img) {
       return img.smallThumbnail;
-      
+
     } else {
-      console.log("no image");      
+      console.log("no image");
       return <p>No image</p>
     }
   }
@@ -119,7 +119,7 @@ class Home extends Component {
               </List>
             ) : (
                 <p><span className="sm-text">...there aren't any</span></p>
-            )}
+              )}
           </Results>
 
           <Books>
