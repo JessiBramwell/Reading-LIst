@@ -1,16 +1,17 @@
-import React, { Component } from "react";
-import { Col } from "../Grid"
+import React from "react";
+import { Col } from "../Grid";
 
+function Results(props) {
+  
+  console.log(props);
+  
+  return (
+    <Col size={"md-6"}>
+      <h1>These are search results</h1>
+      {props.children}
+    </Col>
+  )
 
-class Results extends Component {
-
-  render() {
-    return (
-      <Col size={"md-6"}>
-        <h1>These are Results</h1>
-      </Col>
-    )
-  }
 }
 
 export default Results;
