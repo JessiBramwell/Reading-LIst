@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import { Row, Col } from "../Grid"
+import { Col } from "../Grid"
 
 
 class Results extends Component {
-
 
   render() {
     return (

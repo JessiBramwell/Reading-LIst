@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 
 import { Container, Col, Row } from "../components/Grid";
-import { Input, TextArea, Btn } from "../components/Form";
+import { Input, Btn } from "../components/Form";
 import Results from "../components/Results";
 import Books from "../components/Books";
 
